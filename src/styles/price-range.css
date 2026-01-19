@@ -1,0 +1,35 @@
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.label h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.label p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.preco {
+  padding: 20px;
+  width: 100%;
+}
+
+.filtro__preco {
+  padding: 25px;
+}
+#volume {
+  width: 100%;
+  background-color: var(--brand-1);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  background: var(--brand-1);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px; /* alinha com a barra */
+}

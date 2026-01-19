@@ -1,0 +1,11 @@
+.cabecalho {
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--brand-2);
+  padding: 40px;
+}
+
+span {
+  color: var(--brand-2);
+}

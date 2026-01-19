@@ -1,0 +1,47 @@
+.albuns img {
+  max-width: 300px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.name p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flex button {
+  color: white;
+  background-color: var(--brand-2);
+  border-radius: 4px;
+  padding: 9px;
+  border: none;
+}
+
+.valor {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.container img {
+  padding-bottom: 10px;
+}
