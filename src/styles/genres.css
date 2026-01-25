@@ -1,17 +1,21 @@
 .button__genero {
-  padding: 8px;
-  margin: 8px;
+  padding: 8px 16px;
+  margin: 0 8px 0 0;
   background-color: var(--gray-6);
   border: none;
   color: var(--gray-3);
   border-radius: 5px;
+  cursor: pointer;
+}
+.active {
+  background-color: black;
+  color: white;
 }
 
 .genero {
   width: 100%;
-  padding: 25px;
-}
-
-main h2 {
-  font-weight: 600;
+  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
 }

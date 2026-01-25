@@ -13,26 +13,24 @@
     <link rel="stylesheet" href="./src/styles/albums.css" />
   </head>
   <body>
-    <!-- CABEÇALHO -->
-    <header>
+    <header class="header-fixed">
       <div class="cabecalho">
         <h1><span>o</span>pen <span>m</span>usic</h1>
-        <img src="./src/assets/icons/moon.svg" />
+        <img class="modo" src="./src/assets/icons/moon.svg" />
       </div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
     <main>
       <h2>Gênero Musical</h2>
       <!-- SEÇÃO DE FILTRO POR GENERO -->
       <section>
         <div class="genero">
-          <button class="button__genero">Todos</button>
+          <button class="button__genero active">Todos</button>
           <button class="button__genero">Pop</button>
           <button class="button__genero">MPB</button>
           <button class="button__genero">Forró</button>
           <button class="button__genero">Samba</button>
-          <button class="button__genero">Bailão</button>
+          <button class="button__genero">Baião</button>
           <button class="button__genero">Rap</button>
           <button class="button__genero">Hip-Hop</button>
         </div>
@@ -42,7 +40,7 @@
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
       <section class="preco">
         <div class="label">
-          <h2>Definir preço</h2>
+          <h2>Definir Preço</h2>
           <p>Até <span>R$ 100</span></p>
         </div>
         <div class="filtro__preco">
@@ -54,9 +52,9 @@
       <!-- SEÇÃO DE ALBUNS -->
       <section class="albuns">
         <div class="container">
-          <h2>Albuns encontrados</h2>
+          <h2>Albuns Encontrados</h2>
           <div class="cards">
-            <div>
+            <div class="card">
               <img src="./src/assets/imagens/cover-1.png" />
               <h2>Acabou o chorare</h2>
               <div class="flex name">
@@ -68,7 +66,7 @@
                 <button>Comprar</button>
               </div>
             </div>
-            <div>
+            <div class="card">
               <img src="./src/assets/imagens/cover-2.png" />
               <h2>The Wall</h2>
               <div class="flex name">
@@ -80,7 +78,7 @@
                 <button>Comprar</button>
               </div>
             </div>
-            <div>
+            <div class="card">
               <img src="./src/assets/imagens/cover-3.png" />
               <h2>To Pimp a Butterfly</h2>
               <div class="flex name">
@@ -92,7 +90,7 @@
                 <button>Comprar</button>
               </div>
             </div>
-            <div>
+            <div class="card">
               <img src="./src/assets/imagens/cover-1.png" />
               <h2>Acabou o chorare</h2>
               <div class="flex name">
@@ -104,7 +102,7 @@
                 <button>Comprar</button>
               </div>
             </div>
-            <div>
+            <div class="card">
               <img src="./src/assets/imagens/cover-2.png" />
               <h2>The Wall</h2>
               <div class="flex name">
@@ -116,7 +114,7 @@
                 <button>Comprar</button>
               </div>
             </div>
-            <div>
+            <div class="card">
               <img src="./src/assets/imagens/cover-3.png" />
               <h2>To Pimp a Butterfly</h2>
               <div class="flex name">
@@ -133,6 +131,7 @@
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
       </section>
     </main>
+
     <script type="module" src="./src/scripts/main.js"></script>
   </body>
 </html>
