@@ -64,3 +64,17 @@ function filtroDePreco() {
   });
   renderAlbuns(resultado);
 }
+
+const listaGenero = document.querySelector(".genero");
+
+listaGenero.addEventListener("click", (event) => {
+  const clicado = event.target.closest(".button__genero");
+  if (!clicado) return;
+
+  const genero = clicado.innerText;
+  const resultado =
+    genero === "Todos"
+      ? albumList
+      : albumList.filter((album) => album.genre === genero);
+  renderAlbuns(resultado);
+});
