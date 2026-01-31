@@ -46,3 +46,21 @@ function renderAlbuns(lista) {
   });
 }
 renderAlbuns(albumList);
+
+const valor = document.querySelector(".valor-preco");
+const input = document.querySelector(".range");
+
+valor.textContent = input.value;
+
+input.addEventListener("input", () => {
+  valor.textContent = input.value;
+  filtroDePreco();
+});
+
+function filtroDePreco() {
+  const valorRange = Number(input.value);
+  const resultado = albumList.filter((album) => {
+    return album.price <= valorRange;
+  });
+  renderAlbuns(resultado);
+}
